@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+void Print_hw(int count){
+    if(count==0){
+        return ;
+    }else{
+        cout<<"Hello World\n";
+        Print_hw(count-1);
+    }
+}
+int main() {
+    Print_hw(8);
+    return 0;
+}
