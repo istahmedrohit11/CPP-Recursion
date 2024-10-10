@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int sum_of_degits(int num){
+    if(num==0)
+        return 0;
+    else
+    return (num%10)+ sum_of_degits(num/10);
+}
+int main() {
+    int n;
+    cout<<"Enter Degits: ";
+    cin>>n;
+    cout<<"The sum is:"<<sum_of_degits(n);
+    return 0;
+}
